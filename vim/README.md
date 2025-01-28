@@ -1,5 +1,5 @@
 # Vim
-This setup is mainly for Debian. 
+This setup is mainly for Debian and cleaned up my old way to backup the whole .vim folder.  
 
 apt install vim-latexsuite
 
