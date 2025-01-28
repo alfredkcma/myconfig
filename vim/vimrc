@@ -1,0 +1,93 @@
+set nocompatible
+
+filetype plugin on
+
+filetype indent on
+
+let g:netrw_altv=1
+
+set linebreak
+
+set backspace=indent,eol,start
+
+if has("vms")
+    set nobackup
+else
+    set backup
+endif
+
+" set the backup directory to ~/tmp
+set backupdir-=.
+
+set history=50
+set ruler
+set showcmd
+
+if &t_Co>2 || has("gui_running")
+    syntax on
+    set hlsearch
+endif
+
+" hidden buffer
+set hidden
+
+set ignorecase
+
+set tw=78
+
+colo fnaqevan
+
+set guifont=Monospace\ 10
+
+let g:netrw_altv=1            
+
+" Make the auto wrap look better
+set linebreak
+
+"For html.vim
+let g:html_tag_case="lowercase"
+
+" some mapping 
+map <silent> ,n :if &guioptions =~# 'T' <Bar>
+                         \set guioptions-=T <Bar>
+                         \set guioptions-=m <bar>
+                         \set lines=999  <Bar>
+                    \else <Bar>
+                         \set guioptions+=T  <Bar>
+                         \set guioptions+=m  <Bar>
+                      \endif<CR>
+map <silent> ,m :w<CR>:!make<CR>
+map <silent> ,t :TlistToggle<CR>
+
+" set the input method to CTRL space
+set imak=C-space
+set imi=0
+set imd
+
+" set the tab size to look like 4 spaces instead of 8
+set sts=4
+set sw=4
+set ts=4
+set et
+
+" automatically change the working directory
+set autochdir
+
+" push @ to be @@@
+set display=lastline
+
+" always report number of substitution
+set report=0
+
+" dictionary and thesaurus
+set dict+=/usr/share/dict/words
+set thesaurus+=~/snapshot/mthes/mobythes.txt
+
+" some iab 
+ia teh the
+ia aslo also
+
+" for R plugin
+let vimrplugin_tmux = 0
+
+let mapleader = ","
