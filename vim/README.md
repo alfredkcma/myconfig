@@ -13,5 +13,5 @@ create folder:
 .vim/pack/vendor/start
 
 Then use git to clone packages there, my current list:
-bufexplorer
-nerdcommenter
+- bufexplorer
+- nerdcommenter
