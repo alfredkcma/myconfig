@@ -16,3 +16,4 @@ create folder:
 Then use git to clone packages there, my current list:
 - bufexplorer
 - nerdcommenter
+- vim-colorschemes
