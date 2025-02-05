@@ -5,7 +5,8 @@ apt install vim-latexsuite
 
 vim-addons install latex-suite
 
-apt install vim-juila
+apt install vim-julia
+
 vim-addons install vim-julia
 
 create folder: 
