@@ -22,7 +22,7 @@ bind l exec xtrlock
 
 bind a exec bash /usr/share/doc/ratpoison/examples/ratdate.sh
 
-bind m exec amixer set Speaker toggle
+bind m exec amixer set Master toggle
 
 bind space exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
 
