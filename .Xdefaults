@@ -1,0 +1,37 @@
+xdvi.mainTranslations: #override\
+   <Key>j:down(0.015)\n\
+   <Key>k:up(0.015)\n\
+   <Key>l:right(0.015)\n\
+   <Key>h:left(0.015)\n\
+   <Key>b:up-or-previous()
+xdvi.shrinkFactor: 4
+xdvi.postscript: 1
+xdvi.mouseMode: 1
+xdvi.reverseVideo: true
+xdvi.expertMode: 2
+
+xpdf.reverseVideo: true
+xpdf*Foreground: white
+xpdf*Background: black
+
+
+
+
+XTerm*foreground: #aad050
+XTerm*background: #000000
+XTerm*scrollBar: off
+XTerm*metaSendsEscape: true
+XTerm*charClass: 37:48,45-47:48,38:48,58:48
+
+urxvt*font: xft:DejaVu Sans Mono:pixelsize=20
+!urxvt*font: xft:STIX Regular:pixelsize=12
+urxvt*scrollBar: false
+urxvt*foreground: #aad050
+urxvt*background: #000000
+urxvt*internalBorder: 11
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+urxvt.imLocale: zh_HK.UTF-8
+urxvt.termName: xterm
+
