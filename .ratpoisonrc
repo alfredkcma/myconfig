@@ -1,0 +1,29 @@
+# Gets rid of that ugly crosshairs default cursor
+# and set the background to black
+exec xsetroot -solid black -cursor_name left_ptr
+
+exec xrdb -merge ~/.Xdefaults
+
+exec xset b off
+
+exec feh --bg-center /usr/share/plymouth/themes/debian-edu-buster/background.png
+
+exec dunst
+
+exec urxvt
+
+set border 0
+
+bind e exec urxvt
+
+bind g exec flameshot gui
+
+bind l exec xtrlock
+
+bind a exec bash /usr/share/doc/ratpoison/examples/ratdate.sh
+
+bind m exec amixer set Speaker toggle
+
+bind space exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
+
+bind Return exec ratpoison -c "frestore `ratpoison -c 'getenv fs2'`"
