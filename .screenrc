@@ -1,0 +1,31 @@
+termcapinfo xterm ti@:te@
+defescape "^Gg"
+escape "^Gg"
+defscrollback 10000
+
+bind "^w" windowlist -b
+bind -c splitkey = resize =
+bind -c splitkey 0 resize 35
+bind -c splitkey 1 resize +1
+bind -c splitkey 2 resize +2
+bind -c splitkey 3 resize +3
+bind -c splitkey 4 resize +4
+bind -c splitkey 5 resize +5
+bind -c splitkey 6 resize +6
+bind -c splitkey 7 resize +7
+bind -c splitkey 8 resize +8
+bind -c splitkey 9 resize +9
+bind -c splitkey ^j focus down
+bind -c splitkey j focus down
+bind -c splitkey ^k focus up
+bind -c splitkey k focus up
+bind -c splitkey ^m resize max
+# do the rerun on run screen
+bind -c splitkey r at run# stuff "^p^j"
+bind -c splitkey ^r at run# stuff "^p^j"
+
+bind "^t" command -c splitkey
+
+vbell off
+
+msgwait 0.5
