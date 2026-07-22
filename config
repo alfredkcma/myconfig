@@ -103,7 +103,7 @@ mode "ratpoison" {
 
     bindsym o exec swaylock -f -i /usr/share/desktop-base/debian-edu-spacefun-theme/wallpaper/contents/images/1920x1080.svg; mode "default"
 
-    bindsym p exec grim -g "$(slurp)" - | wl-copy; mode "default"
+    bindsym s exec grim -g "$(slurp)" - | wl-copy; mode "default"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -182,11 +182,11 @@ mode "ratpoison" {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym b splith; mode "default"
+    bindsym w splith; mode "default"
     bindsym v splitv; mode "default"
 
     # Switchfthe current container between different layout styles
-    bindsym s layout stacking; mode "default"
+    bindsym e layout stacking; mode "default"
     #bindsym $mod+w layout tabbed
     bindsym t layout splith; mode "default"
     bindsym u focus parent; mode "default"
