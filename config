@@ -186,9 +186,9 @@ mode "ratpoison" {
     bindsym v splitv; mode "default"
 
     # Switchfthe current container between different layout styles
-    bindsym e layout stacking; mode "default"
+    bindsym t layout stacking; mode "default"
     #bindsym $mod+w layout tabbed
-    bindsym t layout splith; mode "default"
+    bindsym e layout splith; mode "default"
     bindsym u focus parent; mode "default"
     bindsym r mode "resize"
 
@@ -237,7 +237,6 @@ mode "resize" {
     bindsym Right resize grow width 10px
 
     # Return to default mode
-    bindsym Return mode "default"
     bindsym Escape mode "default"
 }
 
